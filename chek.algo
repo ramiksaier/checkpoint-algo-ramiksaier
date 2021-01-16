@@ -1,0 +1,18 @@
+ALGORITHM sentense
+VAR
+ch = STRING;
+nbrcara , nbrword , nbrvoyel= INTEGER;
+
+BEGIN
+    FOR ( int i =0; i<ch.length(); i++ ) DO {
+if (ch.length!=0) DO {
+nbrcara<-nbrcara+1; 
+return( "le nombre de caractere est ", nbrcara);}
+if (ch[i]==" ") {
+nbrword<-nbrword+1;
+return("le nombre de word est ", nbrword); }
+if((ch[i]=='a')||(ch[i]=='e')||(ch[i]=='i')||(ch[i]=='o')||(ch[i]=='u'))DO{
+nbrvoyel=nbrvoyel+1;
+return ( "le nombre de voyel est" nbrvoyel); }
+    END_FOR }
+END
