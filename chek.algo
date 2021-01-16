@@ -1,18 +1,23 @@
 ALGORITHM sentense
 VAR
-ch = STRING;
-nbrcara , nbrword , nbrvoyel= INTEGER;
+ch = STRING[50];
+nbrcara , nbrword , nbrvoyel,i= INTEGER;
 
 BEGIN
+Write("Give me a sentense please");
+   Read(ch);
     FOR ( int i =0; i<ch.length(); i++ ) DO {
-if (ch.length!=0) DO {
-nbrcara<-nbrcara+1; 
-return( "le nombre de caractere est ", nbrcara);}
-if (ch[i]==" ") {
-nbrword<-nbrword+1;
-return("le nombre de word est ", nbrword); }
-if((ch[i]=='a')||(ch[i]=='e')||(ch[i]=='i')||(ch[i]=='o')||(ch[i]=='u'))DO{
-nbrvoyel=nbrvoyel+1;
-return ( "le nombre de voyel est" nbrvoyel); }
+if (ch.length<>0) then 
+nbrcara:=nbrcara+1; 
+Write( "le nombre de caractere est ", nbrcara);
+end if
+if (ch[i]==" ")  then
+nbrword:=nbrword+1;
+Write("le nombre de word est ", nbrword); 
+end if 
+if((ch[i]=='a')||(ch[i]=='e')||(ch[i]=='i')||(ch[i]=='o')||(ch[i]=='u')) then 
+nbrvoyel:=nbrvoyel+1;
+Write ( "le nombre de voyel est" nbrvoyel); 
+end if 
     END_FOR }
 END
